@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/Cereceres/get-content-liziajs.svg?branch=master)](https://travis-ci.org/Cereceres/get-content-liziajs)
 # get-content-liziajs
 get the content from a path given, like lizia.
 #Usage
