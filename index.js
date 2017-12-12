@@ -11,7 +11,7 @@ const get = function(pathToLook) {
     regex = new RegExp(regex);
     let stats;
     let _stats;
-    return (function gettting(tree, where) {
+    function gettting(tree, where) {
         tree.files = tree.files || [];
         for (const file of fs.readdirSync(where)) {
             if(regex.test(file)) continue;
@@ -26,7 +26,8 @@ const get = function(pathToLook) {
             gettting(tree[file], `${where }/${file}`);
         }
         return tree;
-    }({}, _path));
+    }
+    return gettting({}, _path);
 };
 get.includeHidden = function() {
     get._includeHidden = true;

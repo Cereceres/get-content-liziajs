@@ -1,6 +1,6 @@
 {
   "name": "get-content-liziajs",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "get the content of folder from a path given in tree form",
   "main": "index.js",
   "directories": {
